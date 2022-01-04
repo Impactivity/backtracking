@@ -35,6 +35,7 @@ def dfs():
         if i not in s:
             s.append(i)
             dfs()
+            print('pop  : ' , s[-1])
             s.pop()
 
 dfs()
