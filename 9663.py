@@ -14,12 +14,8 @@ def logic(n):
 
             if check(n): #현재 올려놓은 대상과 이미 올려놓은 퀸들이 대각선상, 같은선상에 존재하는지 체크
                 visited[i] = True
-                print('재귀호출 전. 현재 n ' , n)
-                print(visited)
                 logic(n+1) # 다음행으로
-                print('재귀호출 후. 현재 n ' , n )
                 visited[i] = False
-                print(visited)
 
 # 대각선에 위치해있다는 조건
 # 행끼리의 차와 열끼리의 절대값 차가 같으면 대각선상임..
